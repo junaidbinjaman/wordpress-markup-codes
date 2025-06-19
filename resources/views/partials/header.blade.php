@@ -6,7 +6,7 @@
             <ul class="navbar flex flex-col justify-center font-chivo gap-[34px] lg:flex-row">
                 <x-navinput slug="home" :active="request()->is('/')">Home</x-navinput>
                 <x-navinput slug="about" :active="request()->is('about')">About</x-navinput>
-                <x-navinput slug="company" :active="request()->is('company')">Company</x-navinput>
+                <x-navinput slug="company" :active="request()->is('blogs')">Blogs</x-navinput>
                 <x-navinput slug="services" :active="request()->is('services')">Services</x-navinput>
                 <x-navinput slug="contact" :active="request()->is('contact')">Contact</x-navinput>
             </ul>
@@ -43,7 +43,7 @@
                 <ul class="flex flex-col gap-5">
                     <x-navinput slug="home" :active="request()->is('/')" theme="dark">Home</x-navinput>
                     <x-navinput slug="about" :active="request()->is('about')" theme="dark">About</x-navinput>
-                    <x-navinput slug="company" :active="request()->is('company')" theme="dark">Company</x-navinput>
+                    <x-navinput slug="company" :active="request()->is('blogs')" theme="dark">Blogs</x-navinput>
                     <x-navinput slug="services" :active="request()->is('services')" theme="dark">Services</x-navinput>
                     <x-navinput slug="contact" :active="request()->is('contact')" theme="dark">Contact</x-navinput>
                 </ul>

@@ -27,7 +27,7 @@
     @yield('content')
 </main>
 
-<div class="wrapper mx-auto text-gray-900 font-normal max-w-[1320px]">
+<div class="wrapper mx-auto text-gray-900 font-normal mg:w-[1320px]">
     @include('partials.footer')
 </div>
 

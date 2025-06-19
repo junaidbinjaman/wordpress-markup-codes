@@ -2,7 +2,8 @@
     'post_category' => 'default',
     'post_title' => '',
     'href' => '',
-    'thumbnail' => ''
+    'thumbnail' => '',
+    "bg_color_no" => "9"
 ])
 <a class="block group" href="{{$href}}">
     <div class="flex items-center mb-[11px]">
@@ -19,7 +20,7 @@
             </div>
             <div class="absolute w-full h-full left-0 z-0 top-0 translate-y-[30px] pl-[33px]">
                 <div
-                    class="w-full h-full rounded-2xl bg-opacity-50 transition-all duration-200 bg-bg-4 group-hover:-translate-x-[10px] group-hover:-translate-y-[10px]"></div>
+                    class="w-full h-full rounded-2xl bg-opacity-50 transition-all duration-200 bg-bg-{{$bg_color_no}} group-hover:-translate-x-[10px] group-hover:-translate-y-[10px]"></div>
             </div>
         </div>
     </div>

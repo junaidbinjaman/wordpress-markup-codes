@@ -10,51 +10,51 @@
             Trusted by the world’s leading companies
         </h2>
         <div class="flex flex-wrap items-center justify-center mb-[30px] md:mb-[60px] lg:mb-[80px]">
-            <a
-                class="transition-all duration-300 partner-item p-[15px] md:pr-[15px] xl:w-auto lg:w-[184px] hover:translate-y-[-3px]"
-                href="/">
-                <img src="/images/partner-logo-1.svg" alt="partner logo">
-            </a>
-            <a
-                class="transition-all duration-300 partner-item p-[15px] md:pr-[15px] xl:w-auto lg:w-[184px] hover:translate-y-[-3px]"
-                href="/">
-                <img src="/images/partner-logo-2.svg" alt="partner logo">
-            </a>
-            <a
-                class="transition-all duration-300 partner-item p-[15px] md:pr-[15px] xl:w-auto lg:w-[184px] hover:translate-y-[-3px]"
-                href="/">
-                <img src="/images/partner-logo-3.svg" alt="partner logo">
-            </a>
-            <a
-                class="transition-all duration-300 partner-item p-[15px] md:pr-[15px] xl:w-auto lg:w-[184px] hover:translate-y-[-3px]"
-                href="/">
-                <img src="/images/partner-logo-4.svg" alt="partner logo">
-            </a>
-            <a
-                class="transition-all duration-300 partner-item p-[15px] md:pr-[15px] xl:w-auto lg:w-[184px] hover:translate-y-[-3px] md:col-start-2 lg:col-start-auto"
-                href="/">
-                <img src="/images/partner-logo-5.svg" alt="partner logo">
-            </a>
-            <a
-                class="transition-all duration-300 partner-item p-[15px] md:pr-[15px] xl:w-auto lg:w-[184px] hover:translate-y-[-3px] md:col-start-3 lg:col-start-auto"
-                href="/">
-                <img src="/images/partner-logo-6.svg" alt="partner logo">
-            </a>
-            <a
-                class="transition-all duration-300 partner-item p-[15px] md:pr-[15px] xl:w-auto lg:w-[184px] hover:translate-y-[-3px]"
-                href="/">
-                <img src="/images/partner-logo-1.svg" alt="partner logo">
-            </a>
-            <a
-                class="transition-all duration-300 partner-item p-[15px] md:pr-[15px] xl:w-auto lg:w-[184px] hover:translate-y-[-3px]"
-                href="/">
-                <img src="/images/partner-logo-2.svg" alt="partner logo">
-            </a>
-            <a
-                class="transition-all duration-300 partner-item p-[15px] md:pr-[15px] xl:w-auto lg:w-[184px] hover:translate-y-[-3px]"
-                href="/">
-                <img src="/images/partner-logo-3.svg" alt="partner logo">
-            </a>
+            <x-brand-logo
+                logo="images/partner-logo-1.svg"
+                href="/"
+                alt="Brand logo"
+            />
+            <x-brand-logo
+                logo="images/partner-logo-2.svg"
+                href=""
+                alt="Brand logo"
+            />
+            <x-brand-logo
+                logo="images/partner-logo-3.svg"
+                href="/"
+                alt="Brand logo"
+            />
+            <x-brand-logo
+                logo="images/partner-logo-4.svg"
+                href="/"
+                alt="Brand logo"
+            />
+            <x-brand-logo
+                logo="images/partner-logo-5.svg"
+                href="/"
+                alt="Brand logo"
+            />
+            <x-brand-logo
+                logo="images/partner-logo-6.svg"
+                href="/"
+                alt="Brand logo"
+            />
+            <x-brand-logo
+                logo="images/partner-logo-3.svg"
+                href="/"
+                alt="Brand logo"
+            />
+            <x-brand-logo
+                logo="images/partner-logo-2.svg"
+                href="/"
+                alt="Brand logo"
+            />
+            <x-brand-logo
+                logo="images/partner-logo-1.svg"
+                href="/"
+                alt="Brand logo"
+            />
         </div>
         <div class="w-full bg-gray-300 h-[1px] mb-[50px] md:mb-[90px] lg:mb-[150px]"></div>
     </div>
@@ -65,7 +65,7 @@
                 <div class="relative">
                     <img class="rounded-2xl mb-[30px] lg:mb-0 lg:flex-1" src="/images/thumbnail-7.png" alt="Agon">
                     <img
-                        class="absolute rounded-2xl bottom-0 shadow-3 animate-float max-w-[296px] right-[-15%]"
+                        class="absolute rounded-2xl bottom-0 shadow-3 animate-float max-w-[296px] right-[1%] bottom-[1%]"
                         src="/images/chart.png" alt="chart image">
                 </div>
                 <div class="flex-1 order-1 lg:gap-[30px] xl:gap-[64px]">
@@ -366,7 +366,7 @@
                             <div
                                 class="block rounded-full w-[65px] h-[30px] bg-gray-900 peer-checked:bg-green-900"></div>
                             <div id="foobar"
-                                class="dot absolute left-1 top-1 rounded-full transition h-[21px] w-[21px] bg-white"></div>
+                                 class="dot absolute left-1 top-1 rounded-full transition h-[21px] w-[21px] bg-white"></div>
                         </div>
                     </label>
                 </div>
@@ -708,24 +708,31 @@
             </div>
         </div>
         <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 md:mt-[150px]">
-            <div class="rounded-2xl p-[30px] gap-5 mx-auto bg-purple-200 px-[15px] py-[50px] md:flex md:px-[52px] md:py-[72px] lg:gap-[40px] lg:h-[420px] xl:h-[390px] max-w-[1190px]">
+            <div
+                class="rounded-2xl p-[30px] gap-5 mx-auto bg-purple-200 px-[15px] py-[50px] md:flex md:px-[52px] md:py-[72px] lg:gap-[40px] lg:h-[420px] xl:h-[390px] max-w-[1190px]">
                 <div class="flex-1 mb-[30px]">
                     <p class="text-capitalized uppercase text-gray-500 tracking-[2px] mb-[13px]">newsletter</p>
-                    <h4 class="font-bold font-chivo text-[28px] leading-[32px] md:text-heading-2 mb-[20px]">Subscribe our newsletter</h4>
+                    <h4 class="font-bold font-chivo text-[28px] leading-[32px] md:text-heading-2 mb-[20px]">Subscribe
+                        our newsletter</h4>
                     <p class="text-text text-gray-500">By clicking the button, you are agreeing with our</p>
                     <a class="text-green-900" href="/">Term & Conditions</a>
                     <form class="mt-[30px]" action="/">
                         <div class="bg-white flex items-center justify-between p-3 rounded-[55px]">
                             <input class="ml-[25px]" type="text" placeholder="Enter your mail ...">
-                            <button class="rounded-full bg-green-900 grid place-items-center w-[56px] h-[56px]" type="submit">
+                            <button class="rounded-full bg-green-900 grid place-items-center w-[56px] h-[56px]"
+                                    type="submit">
                                 <img class="!filter-white !text-white" src="{{asset('/icons/icon-right.svg')}}" alt="">
                             </button>
                         </div>
                     </form>
                 </div>
                 <div class="relative flex-1">
-                    <img class="h-full w-full object-cover rounded-2xl img-shadow lg:absolute lg:max-w-[332px] lg:h-[403px] lg:right-0" src="{{asset('/images/thumbnail-2.png')}}" alt="Agon">
-                    <img class=" object-cover absolute animate-float w-[225px] h-[170px] rounded-[14px] bottom-[-20px] left-[-10px]" src="{{asset('/images/thumbnail-2.png')}}" alt="Agon">
+                    <img
+                        class="h-full w-full object-cover rounded-2xl img-shadow lg:absolute lg:max-w-[332px] lg:h-[403px] lg:right-0"
+                        src="{{asset('/images/thumbnail-2.png')}}" alt="Agon">
+                    <img
+                        class=" object-cover absolute animate-float w-[225px] h-[170px] rounded-[14px] bottom-[-20px] left-[-10px]"
+                        src="{{asset('/images/thumbnail-2.png')}}" alt="Agon">
                 </div>
             </div>
         </div>

@@ -1,10 +1,12 @@
 <div class="full-width banner-hero bg-purple-200 banner-2">
     <div
-        class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 z-10 relative mx-auto mt-0 py-[60px] !mt-0 max-w-[1320px] lg:flex lg:items-center">
+        class="px-[12px] md:px-[36px] mt-0 xl:px-0 z-10 relative mx-auto py-[60px] max-w-[1320px] lg:flex lg:items-center">
         <div class="lg:w-[60%] lg:mr-[150px]">
-                <span
-                    class="font-chivo inline-block bg-green-900 text-white py-[14px] px-[28px] rounded-[50px] text-[14px] leading-[14px] mb-[29px]">Digital Marketing Agency</span>
-            <h1 class="font-chivo font-bold lg:text-display-3 md:text-[45px] md:leading-[52px] text-[35px] leading-[42px] mb-[20px] text-[100px]">
+            <span
+                class="font-chivo inline-block bg-green-900 text-white py-[14px] px-[28px] rounded-[50px] text-[14px] leading-[14px] mb-[29px]">
+                    Digital Marketing Agency
+            </span>
+            <h1 class="font-chivo font-bold lg:text-7xl lg:leading-16 md:text-[45px] md:leading-[52px] text-[35px] leading-[42px] mb-[20px]">
                 A small creative team excited to create beautiful things
             </h1>
             <p class="text-quote md:text-lead-lg text-gray-500 pr-[40px] lg:pr-[60px] mb-[44px]">Integrated workflow

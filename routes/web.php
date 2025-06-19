@@ -10,8 +10,8 @@ Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
 
-Route::get('/company', function () {
-    return view('pages.company');
+Route::get('/blogs', function () {
+    return view('pages.blogs');
 })->name('company');
 
 Route::get('/services', function() {
