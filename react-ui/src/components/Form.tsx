@@ -5,6 +5,16 @@ import {useForm} from "react-hook-form";
 import type {SubmitHandler} from "react-hook-form";
 import {useEffect, useState} from "react";
 
+declare global {
+    interface Window {
+        wpData: {
+            restRoot: string;
+            nonce: string
+        }
+    }
+
+}
+
 type FormProps = {
     title: string;
 }
@@ -27,8 +37,36 @@ function Form({title}: FormProps) {
         }
     });
 
-    const onSubmit: SubmitHandler<InputTypes> = (data: InputTypes) => {
-        console.log(data);
+    const onSubmit: SubmitHandler<InputTypes> = async (data: InputTypes) => {
+
+            const url = new URL('wp/v2/posts', window.wpData.restRoot)
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-WP-Nonce': window.wpData.nonce
+                    },
+                    body: JSON.stringify({
+                        title: data.postTitle,
+                        content: data.postContent,
+                        status: 'publish'
+                    })
+                })
+
+                if (!response.ok) {
+                    throw new Error();
+                }
+
+                const resData = await response.json();
+                console.log(resData);
+
+            } catch (error) {
+                console.log(error);
+            }
+
+
         setPostData({postTitle: '', postContent: ''});
     }
 
