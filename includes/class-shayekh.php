@@ -1,114 +1,151 @@
 <?php
 /**
- * Shayekh's plugin main class file
+ * Main class file of the plugin
  *
  * @package Shayekh
  * @author Junaid Bin Jaman<junaid@allnextver.com>
- * @version '1.0.0
+ * @since  1.0.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit();
 
-class Shayekh {
-	/**
-	 * Plugin text domain
-	 * @var string
-	 */
-	public static string $plugin_name = 'sky';
+final class Shayekh
+{
+    /**
+     * Plugin version
+     * @var string
+     */
+    public static string $version = SHAYEKH_VERSION;
 
-	/**
-	 * The running version of the plugin=
-	 * @var string
-	 */
-	public static string $version = SHAYEKH_VERSION;
+    /**
+     * Plugins's text domain
+     *
+     * @var string
+     */
+    public static string $plugin_name = 'sky';
 
-	/**
-	 * @var Shayekh|null
-	 */
-	public static ?Shayekh $instance = null;
+    /**
+     * The current class instance
+     *
+     * @var Shayekh|null
+     */
+    public static ?Shayekh $instance = null;
 
-	public function __construct() {
-		$this->includes();
-		$this->init();
-	}
+    public function __construct()
+    {
+        $this->includes();
+        $this->init();
+    }
 
-	/**
-	 * Returns the plugin's text domain/name
-	 *
-	 * @return string
-	 */
-	public static function get_plugin_name(): string {
-		return self::$plugin_name;
-	}
+    /**
+     * Includes the required files
+     *
+     * @return void
+     */
+    private function includes(): void
+    {
+        // Includes the admin class file
+        require_once plugin_dir_path(__DIR__) . 'admin/class-shayekh-admin.php';
 
-	/**
-	 * Returns the current plugin's version
-	 *
-	 * @return string
-	 */
-	public static function get_plugin_version(): string {
-		if ( ! defined( 'SHAYEKH_VERSION' ) ) {
-			self::$version = '1.0.0';
-		}
+        // Includes the plugin class file
+        require_once plugin_dir_path(__DIR__) . 'public/class-shayekh-public.php';
+    }
 
-		return self::$version;
-	}
+    /**
+     * Init the plugin
+     *
+     * @return void
+     */
+    private function init(): void
+    {
+        $this->init_admin();
+        $this->init_public();
+    }
 
-	/**
-	 * Include the file required to load the plugin
-	 * @return void
-	 */
-	private function includes(): void {
-		require plugin_dir_path( __DIR__ ) . 'admin/class-shayekh-admin.php';
-		require plugin_dir_path( __DIR__ ) . 'public/class-shayekh-public.php';
-	}
+    /**
+     * Get the current version of the plugin
+     * @return string
+     */
+    public static function get_version(): string
+    {
+        if (!self::$version) :
+            self::$version = '1.0.0';
+        endif;
 
-	/**
-	 * Init the plugin
-	 * @return void
-	 */
-	private function init(): void {
-		if ( is_admin() ) :
-			$this->init_admin();
-		else :
-			$this->init_public();
-		endif;
-	}
+        return self::$version;
+    }
 
-	/**
-	 * Get the current instance of the class
-	 * @return Shayekh
-	 */
-	public static function get_instance(): Shayekh {
+    /**
+     * Returns the plugins name
+     *
+     * @return string
+     */
+    public static function get_plugin_name(): string
+    {
+        return self::$plugin_name;
+    }
 
-		if ( self::$instance === null ) {
-			self::$instance = new self();
-		}
+    /**
+     * Current instance of the plugin's main class
+     *
+     * @return Shayekh|null
+     */
+    public static function get_instance(): Shayekh|null
+    {
+        if (self::$instance === null) :
+            self::$instance = new self();
+        endif;
 
-		return self::$instance;
-	}
+        return self::$instance;
+    }
 
-	private function init_admin(): void {
-		new Shayekh_admin();
-	}
+    private function __clone()
+    {
+    }
 
-	private function init_public(): void {
-		new Shayekh_Public();
-	}
+    /**
+     * Init admin functionality of the plugin
+     *
+     * @return void
+     */
+    private function init_admin(): void
+    {
+        new Shayekh_Admin();
+    }
 
-	/**
-	 * The function runs durng plugin activation
-	 *
-	 * @return void
-	 */
-	public static function activator() {}
+    /**
+     * Init public functionality of the plugin
+     *
+     * @return void
+     */
 
-	/**
-	 * The function runs during plugin deactivation
-	 *
-	 * @return void
-	 */
-	public static function deactivator() {
+    /**
+     * Init public functionality of the plugin
+     *
+     * @return void
+     */
+    private function init_public(): void
+    {
+        new Shayekh_Public();
+    }
 
-	}
+    /**
+     * Runs during plugin activation
+     *
+     * @return void
+     */
+    public static function activator()
+    {
+        //
+    }
+
+    /**
+     * Runs during plugin deactivation
+     *
+     * @return void
+     */
+    public static function deactivator()
+    {
+        //
+    }
 }
