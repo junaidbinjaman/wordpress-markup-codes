@@ -365,7 +365,7 @@
                             <input class="sr-only peer" id="billSwitch" type="checkbox" name="">
                             <div
                                 class="block rounded-full w-[65px] h-[30px] bg-gray-900 peer-checked:bg-green-900"></div>
-                            <div
+                            <div id="foobar"
                                 class="dot absolute left-1 top-1 rounded-full transition h-[21px] w-[21px] bg-white"></div>
                         </div>
                     </label>

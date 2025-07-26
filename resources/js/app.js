@@ -5,10 +5,12 @@ import Toggle from "./components/Toggle.js";
 window.$ = $;
 window.jQuery = $;
 
-$(document).ready(function () {
-    const toggle = new Toggle('#toggle');
+(function ($) {
+    $(document).ready(function () {
+        const toggle = new Toggle('#foobar', '.bill-monthly', '.bill-annually');
 
-    $('#button').on('click', function () {
-        toggle.hide()
+        $('#billSwitch').on('click', function () {
+            toggle.toggle()
+        })
     })
-})
+})(jQuery)
