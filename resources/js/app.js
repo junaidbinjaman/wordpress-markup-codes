@@ -11,6 +11,14 @@ window.jQuery = $;
 
         $('#billSwitch').on('click', function () {
             toggle.toggle()
-        })
+        });
+
+        setInterval(() => {
+            $("#myImg").effect("bounce", {
+                times: 1,
+                distance: 10
+            }, 300);
+        }, 600)
     })
+
 })(jQuery)

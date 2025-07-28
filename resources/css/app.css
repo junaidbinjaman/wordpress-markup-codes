@@ -4,3 +4,195 @@
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
+
+:root {
+    /* Color gray */
+    --gray-50: #f9fafb;
+    --gray-100: #f2f4f7;
+    --gray-200: #e4e7ec;
+    --gray-300: #d0d5dd;
+    --gray-400: #98a2b3;
+    --gray-500: #667085;
+    --gray-600: #475467;
+    --gray-700: #344054;
+    --gray-800: #1d2939;
+    --gray-900: #101828;
+
+    /* Color Palette */
+    --green-900: #006d77;
+    --green-500: #83c5be;
+    --green-100: #afeae4;
+    --green-1000: #004b52;
+    --orange-100: #faede3;
+    --orange-500: #ffddd2;
+    --orange-900: #e29578;
+
+    /* Color system */
+    --primary: #508fda;
+    --secondary: #8d99ae;
+    --success: #06d6a0;
+    --danger: #ef476f;
+    --warning: #ffd166;
+    --info: #38a0c2;
+
+    /* Color background */
+    --bg-1: #eae4e9;
+    --bg-2: #fff3ea;
+    --bg-3: #fde2e4;
+    --bg-4: #fad2e1;
+    --bg-5: #dbece5;
+    --bg-6: #bee1e6;
+    --bg-7: #f0efeb;
+    --bg-8: #dfe7fd;
+    --bg-9: #d1ecfd;
+    --bg-10: #ddd3fa;
+
+    /* Animation */
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
+
+@theme {
+    --color-gray-50: var(--gray-50);
+    --color-gray-100: var(--gray-100);
+    --color-gray-200: var(--gray-200);
+    --color-gray-300: var(--gray-300);
+    --color-gray-400: var(--gray-400);
+    --color-gray-500: var(--gray-500);
+    --color-gray-600: var(--gray-600);
+    --color-gray-700: var(--gray-700);
+    --color-gray-800: var(--gray-800);
+    --color-gray-900: var(--gray-900);
+
+    --color-primary: var(--primary);
+    --color-secondary: var(--secondary);
+    --color-success: var(--success);
+    --color-danger: var(--danger);
+    --color-warning: var(--warning);
+    --color-info: var(--info);
+
+    --color-green-900: var(--green-900);
+    --color-green-500: var(--green-500);
+    --color-green-100: var(--green-100);
+    --color-green-1000: var(--green-1000);
+    --color-orange-100: var(--orange-100);
+    --color-orange-500: var(--orange-500);
+    --color-orange-900: var(--orange-900);
+
+    --color-bg-1: var(--bg-1);
+    ---color-bg-2: var(--bg-2);
+    ---color-bg-3: var(--bg-3);
+    ---color-bg-4: var(--bg-4);
+    ---color-bg-5: var(--bg-5);
+    ---color-bg-6: var(--bg-6);
+    ---color-bg-7: var(--bg-7);
+    ---color-bg-8: var(--bg-8);
+    ---color-bg-9: var(--bg-9);
+    ---color-bg-10: var(--bg-10);
+}
+
+@layer utilities {
+    .display-1 {
+        font-size: 96px;
+        line-height: 132px;
+        letter-spacing: -0.01em;
+    }
+
+    .display-2 {
+        font-size: 80px;
+        line-height: 88px;
+        letter-spacing: -0.005em;
+    }
+
+    .display-3 {
+        font-size: 64px;
+        line-height: 72px;
+    }
+
+;
+
+    .display-4 {
+        font-size: 56px;
+        line-height: 67px;
+    }
+
+    .heading-1 {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -0.01em;
+    }
+
+    .heading-2 {
+        font-size: 42px;
+        line-height: 44px;
+    }
+
+    .heading-3 {
+        font-size: 35px;
+        line-height: 38px;
+    }
+
+    .heading-4 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .heading-5 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .heading-6 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    /* Create utility classes */
+    .text-md {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .text-lead {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .text-lead-lg {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .text-excerpt {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .text-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .text-quote {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .text-capitalized {
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .text-sm {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .text-tiny {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
