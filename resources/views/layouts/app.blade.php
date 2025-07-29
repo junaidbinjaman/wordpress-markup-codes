@@ -25,8 +25,11 @@
 <main>
     @yield('content')
 </main>
+
 <div class="wrapper mx-auto text-gray-900 font-normal max-w-[1320px]">
     @include('partials.footer')
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 </html>

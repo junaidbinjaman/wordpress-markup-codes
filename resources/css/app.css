@@ -1,9 +1,12 @@
 @import 'tailwindcss';
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
+@source "../../node_modules/flowbite";
 
 :root {
     /* Color gray */
@@ -109,8 +112,6 @@
         font-size: 64px;
         line-height: 72px;
     }
-
-;
 
     .display-4 {
         font-size: 56px;
