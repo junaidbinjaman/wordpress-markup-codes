@@ -94,83 +94,76 @@
                     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="offer-list dots flex">
-                                <x-service-box
-                                    service_title="Market research"
-                                    service_description="One make creepeth, man bearing theira firmament."
-                                    service_thumbnail="icons/icon-trees.svg"
-                                />
-                                <x-service-box
-                                    service_title="Strategic Consulting"
-                                    service_thumbnail="images/icons/icon-sun.svg"
-                                    service_description="One make creepeth, man bearing theira firmament."
-                                />
+                            <div class="flex items-center justify-center">
+                                <div class="offer-list dots flex p-10">
+                                    <x-service-box
+                                        service_title="Market research"
+                                        service_description="One make creepeth, man bearing theira firmament."
+                                        service_thumbnail="icons/icon-trees.svg"
+                                    />
+                                    <x-service-box
+                                        service_title="Strategic Consulting"
+                                        service_thumbnail="images/icons/icon-sun.svg"
+                                        service_description="One make creepeth, man bearing theira firmament."
+                                    />
+                                </div>
                             </div>
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="offer-list dots flex gap-5">
-                                <x-service-box
-                                    service_title="Cognitive Solution"
-                                    service_thumbnail="images/icons/icon-hat.svg"
-                                    service_description="One make creepeth, man bearing theira firmament."
-                                />
-                                <x-service-box
-                                    service_title="Cognitive Solution"
-                                    service_thumbnail="images/icons/icon-trees.svg"
-                                    service_description="One make creepeth, man bearing theira firmament."
-                                />
+                            <div class="flex items-center justify-center">
+                                <div class="offer-list dots flex gap-5 p-10">
+                                    <x-service-box
+                                        service_title="Cognitive Solution"
+                                        service_thumbnail="images/icons/icon-hat.svg"
+                                        service_description="One make creepeth, man bearing theira firmament."
+                                    />
+                                    <x-service-box
+                                        service_title="Cognitive Solution"
+                                        service_thumbnail="images/icons/icon-trees.svg"
+                                        service_description="One make creepeth, man bearing theira firmament."
+                                    />
+                                </div>
                             </div>
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="offer-list dots flex gap-5">
-                                <x-service-box
-                                    service_title="Cognitive Solution"
-                                    service_thumbnail="images/icons/icon-sun.svg"
-                                    service_description="One make creepeth, man bearing theira firmament."
-                                />
-                                <x-service-box
-                                    service_title="Cognitive Solution"
-                                    service_thumbnail="images/icons/icon-hat.svg"
-                                    service_description="One make creepeth, man bearing theira firmament."
-                                />
+                            <div class="flex items-center justify-center">
+                                <div class="offer-list dots flex gap-5 p-10">
+                                    <x-service-box
+                                        service_title="Cognitive Solution"
+                                        service_thumbnail="images/icons/icon-sun.svg"
+                                        service_description="One make creepeth, man bearing theira firmament."
+                                    />
+                                    <x-service-box
+                                        service_title="Cognitive Solution"
+                                        service_thumbnail="images/icons/icon-hat.svg"
+                                        service_description="One make creepeth, man bearing theira firmament."
+                                    />
+                                </div>
                             </div>
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="offer-list dots flex gap-5">
-                                <x-service-box
-                                    service_title="Market research"
-                                    service_description="One make creepeth, man bearing theira firmament."
-                                    service_thumbnail="icons/icon-trees.svg"
-                                />
-                                <x-service-box
-                                    service_title="Strategic Consulting"
-                                    service_thumbnail="images/icons/icon-sun.svg"
-                                    service_description="One make creepeth, man bearing theira firmament."
-                                />
+                            <div class="flex items-center justify-center">
+                                <div class="offer-list dots flex gap-5 p-10">
+                                    <x-service-box
+                                        service_title="Market research"
+                                        service_description="One make creepeth, man bearing theira firmament."
+                                        service_thumbnail="icons/icon-trees.svg"
+                                    />
+                                    <x-service-box
+                                        service_title="Strategic Consulting"
+                                        service_thumbnail="images/icons/icon-sun.svg"
+                                        service_description="One make creepeth, man bearing theira firmament."
+                                    />
+                                </div>
                             </div>
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="offer-list dots flex gap-5">
-                                <x-service-box
-                                    service_title="Cognitive Solution"
-                                    service_thumbnail="images/icons/icon-trees.svg"
-                                    service_description="One make creepeth, man bearing theira firmament."
-                                />
-                                <x-service-box
-                                    service_title="Cognitive Solution"
-                                    service_thumbnail="images/icons/icon-sun.svg"
-                                    service_description="One make creepeth, man bearing theira firmament."
-                                />
-                            </div>
-                        </div>
-                        <!-- Item 6 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="bg-bg-3 flex mx-auto">
-                                <div class="offer-list dots flex gap-5 ">
+                            <div class="flex items-center justify-center">
+                                <div class="offer-list dots flex gap-5 p-10">
                                     <x-service-box
                                         service_title="Cognitive Solution"
                                         service_thumbnail="images/icons/icon-trees.svg"
@@ -179,6 +172,23 @@
                                     <x-service-box
                                         service_title="Cognitive Solution"
                                         service_thumbnail="images/icons/icon-sun.svg"
+                                        service_description="One make creepeth, man bearing theira firmament."
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <div class="flex items-center justify-center">
+                                <div class="offer-list dots flex gap-5 p-10">
+                                    <x-service-box
+                                        service_title="Cognitive Solution"
+                                        service_thumbnail="images/icons/icon-trees.svg"
+                                        service_description="One make creepeth, man bearing theira firmament."
+                                    />
+                                    <x-service-box
+                                        service_title="Cognitive Solution"
+                                        service_thumbnail="images/icons/icon-trees.svg"
                                         service_description="One make creepeth, man bearing theira firmament."
                                     />
                                 </div>
@@ -268,37 +278,42 @@
                 </p>
                 <div class="flex flex-col lg:max-w-[303px] md:gap-[35px] lg:mb-[48px]">
                     <div class="mb-[30px] lg:mb-0">
-                        <div class="flex items-center mb-[17px]"><img class="mr-[9px]"
-                                                                      src="./assets/images/icons/icon-leaf.svg"
-                                                                      alt="leaf icon">
+                        <div class="flex items-center mb-[17px]">
+                            <img class="mr-[9px]" src="{{asset('icons/icon-leaf.svg')}}" alt="leaf icon">
                             <h4 class="text-heading-6 font-chivo font-bold">Boost your sale</h4>
                         </div>
                         <p class="text-excerpt text-gray-600">The latest design trends meet hand-crafted templates.</p>
                     </div>
                     <div class="mb-[30px] lg:mb-0">
-                        <div class="flex items-center mb-[17px]"><img class="mr-[9px]"
-                                                                      src="./assets/images/icons/icon-leaf.svg"
-                                                                      alt="leaf icon">
+                        <div class="flex items-center mb-[17px]">
+                            <img class="mr-[9px]" src="{{asset('icons/icon-leaf.svg')}}" alt="leaf icon">
                             <h4 class="text-heading-6 font-chivo font-bold">Introducing New Features</h4>
                         </div>
                         <p class="text-excerpt text-gray-600">The latest design trends meet hand-crafted templates.</p>
                     </div>
                 </div>
-                <div class="flex items-center">
-                    <button type="button"><a
-                            class="flex items-center inline-block z-10 relative transition-all duration-200 group px-[22px] py-[15px] lg:px-[32px] lg:py-[22px] rounded-[50px] bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] text-white bg-gray-900 w-fit"
-                            href="#"><span
-                                class="block text-inherit w-full h-full rounded-[50px] text-lg font-chivo font-semibold">Contact Us</span><i>
-                                <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black"
-                                     src="./assets/images/icons/icon-right.svg" alt="arrow right icon"></i></a></button>
-                    <button type="button"><a
-                            class="flex items-center inline-block z-10 relative transition-all duration-200 group px-[22px] py-[15px] lg:px-[32px] lg:py-[22px] rounded-md bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] text-gray-900 bg-transparent w-fit"
-                            href="#"><span
-                                class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Support Center</span></a>
+                <div class="flex items-center gap-5">
+                    <button type="button">
+                        <a
+                            class="flex items-center z-10 relative transition-all duration-200 group px-[22px] py-[15px] lg:px-[32px] lg:py-[22px] rounded-[50px] bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] text-white bg-gray-900 w-fit"
+                            href="#">
+                            <span class="block text-inherit w-full h-full rounded-[50px] text-lg font-chivo font-semibold">Contact Us</span>
+                            <i>
+                                <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black" src="{{asset('icons/icon-right.svg')}}" alt="arrow right icon">
+                            </i>
+                        </a>
+                    </button>
+                    <button type="button">
+                        <a
+                            class="flex items-center z-10 relative transition-all duration-200 group px-[22px] py-[15px] lg:px-[32px] lg:py-[22px] rounded-md hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] text-gray-900 bg-transparent w-fit"
+                            href="#">
+                            <span class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Support Center</span>
+                        </a>
                     </button>
                 </div>
             </div>
             <div class="flex-[1.5]">
+                <x-according />
                 <div class="relative accordion-item mb-5">
                     <details>
                         <summary class="flex justify-between py-5 items-center gap-5 px-[30px]">
