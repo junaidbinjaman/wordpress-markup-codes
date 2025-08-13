@@ -297,9 +297,11 @@
                         <a
                             class="flex items-center z-10 relative transition-all duration-200 group px-[22px] py-[15px] lg:px-[32px] lg:py-[22px] rounded-[50px] bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] text-white bg-gray-900 w-fit"
                             href="#">
-                            <span class="block text-inherit w-full h-full rounded-[50px] text-lg font-chivo font-semibold">Contact Us</span>
+                            <span
+                                class="block text-inherit w-full h-full rounded-[50px] text-lg font-chivo font-semibold">Contact Us</span>
                             <i>
-                                <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black" src="{{asset('icons/icon-right.svg')}}" alt="arrow right icon">
+                                <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black"
+                                     src="{{asset('icons/icon-right.svg')}}" alt="arrow right icon">
                             </i>
                         </a>
                     </button>
@@ -313,96 +315,111 @@
                 </div>
             </div>
             <div class="flex-[1.5]">
-                <x-according />
-                <div class="relative accordion-item mb-5">
-                    <details>
-                        <summary class="flex justify-between py-5 items-center gap-5 px-[30px]">
-                            <h4 class="font-bold font-chivo text-[14px] xl:text-heading-5">Where is my order? Quisque
-                                molestie
-                            </h4>
-                        </summary>
-                        <p class="text-text content font-chivo mt-[30px] ml-[30px]">Nulla non sollicitudin. Morbi sit
-                            amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula
-                            eleifend velit, luctus mattis ante nulla condimentum nulla.
-                        </p>
-                    </details>
-                </div>
-                <div class="relative accordion-item mb-5">
-                    <details>
-                        <summary class="flex justify-between py-5 items-center gap-5 px-[30px]">
-                            <h4 class="font-bold font-chivo text-[14px] xl:text-heading-5">How can I return an item
-                                purchased online?
-                            </h4>
-                        </summary>
-                        <p class="text-text content font-chivo mt-[30px] ml-[30px]">Nulla non sollicitudin. Morbi sit
-                            amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula
-                            eleifend velit, luctus mattis ante nulla condimentum nulla.
-                        </p>
-                    </details>
-                </div>
-                <div class="relative accordion-item mb-5">
-                    <details>
-                        <summary class="flex justify-between py-5 items-center gap-5 px-[30px]">
-                            <h4 class="font-bold font-chivo text-[14px] xl:text-heading-5">Can I cancel or change my
-                                order?
-                            </h4>
-                        </summary>
-                        <p class="text-text content font-chivo mt-[30px] ml-[30px]">Nulla non sollicitudin. Morbi sit
-                            amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula
-                            eleifend velit, luctus mattis ante nulla condimentum nulla.
-                        </p>
-                    </details>
-                </div>
-                <div class="relative accordion-item mb-5">
-                    <details>
-                        <summary class="flex justify-between py-5 items-center gap-5 px-[30px]">
-                            <h4 class="font-bold font-chivo text-[14px] xl:text-heading-5">I have promotional or
-                                discount code?
-                            </h4>
-                        </summary>
-                        <p class="text-text content font-chivo mt-[30px] ml-[30px]">Nulla non sollicitudin. Morbi sit
-                            amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula
-                            eleifend velit, luctus mattis ante nulla condimentum nulla.
-                        </p>
-                    </details>
-                </div>
-                <div class="relative accordion-item mb-5">
-                    <details>
-                        <summary class="flex justify-between py-5 items-center gap-5 px-[30px]">
-                            <h4 class="font-bold font-chivo text-[14px] xl:text-heading-5">What are the delivery types
-                                you use?
-                            </h4>
-                        </summary>
-                        <p class="text-text content font-chivo mt-[30px] ml-[30px]">Nulla non sollicitudin. Morbi sit
-                            amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula
-                            eleifend velit, luctus mattis ante nulla condimentum nulla.
-                        </p>
-                    </details>
-                </div>
-                <div class="relative accordion-item mb-5">
-                    <details>
-                        <summary class="flex justify-between py-5 items-center gap-5 px-[30px]">
-                            <h4 class="font-bold font-chivo text-[14px] xl:text-heading-5">How can I pay for my
-                                purchases?
-                            </h4>
-                        </summary>
-                        <p class="text-text content font-chivo mt-[30px] ml-[30px]">Nulla non sollicitudin. Morbi sit
-                            amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula
-                            eleifend velit, luctus mattis ante nulla condimentum nulla.
-                        </p>
-                    </details>
-                </div>
-                <div class="relative accordion-item mb-5">
-                    <details>
-                        <summary class="flex justify-between py-5 items-center gap-5 px-[30px]">
-                            <h4 class="font-bold font-chivo text-[14px] xl:text-heading-5">Can I cancel my order?
-                            </h4>
-                        </summary>
-                        <p class="text-text content font-chivo mt-[30px] ml-[30px]">Nulla non sollicitudin. Morbi sit
-                            amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula
-                            eleifend velit, luctus mattis ante nulla condimentum nulla.
-                        </p>
-                    </details>
+                <div id="accordion-color" data-accordion="collapse"
+                     data-active-classes="bg-gray-100 dark:bg-gray-100 text-blue-600 dark:text-gray-700">
+                    <x-according
+                        faq_title="What is the main goal"
+                        area_expanded="true"
+                        according_id="1"
+                    >
+                        <x-slot name="faq_description">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                Flowbite is an open-source library of interactive components built on top of Tailwind
+                                CSS
+                                including buttons, dropdowns, modals, navbars, and more.
+                            </p>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Check out this guide to learn how to
+                                <a href="/docs/getting-started/introduction/"
+                                   class="text-blue-600 dark:text-blue-500 hover:underline">get started</a>
+                                and start developing websites even faster with components on top of Tailwind CSS.
+                            </p>
+                        </x-slot>
+                    </x-according>
+
+                    <x-according
+                        faq_title="Where is my order? Quisque molestie"
+                        area_expanded="false"
+                        according_id="2"
+                        header_style="!rounded-none"
+                    >
+                        <x-slot name="faq_description">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                Flowbite is an open-source library of interactive components built on top of Tailwind
+                                CSS
+                                including buttons, dropdowns, modals, navbars, and more.
+                            </p>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Check out this guide to learn how to
+                                <a href="/docs/getting-started/introduction/"
+                                   class="text-blue-600 dark:text-blue-500 hover:underline">get started</a>
+                                and start developing websites even faster with components on top of Tailwind CSS.
+                            </p>
+                        </x-slot>
+                    </x-according>
+
+                    <x-according
+                        faq_title="How can I return an item purchased online?"
+                        area_expanded="false"
+                        according_id="3"
+                        header_style="!rounded-none"
+                    >
+                        <x-slot name="faq_description">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                Flowbite is an open-source library of interactive components built on top of Tailwind
+                                CSS
+                                including buttons, dropdowns, modals, navbars, and more.
+                            </p>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Check out this guide to learn how to
+                                <a href="/docs/getting-started/introduction/"
+                                   class="text-blue-600 dark:text-blue-500 hover:underline">get started</a>
+                                and start developing websites even faster with components on top of Tailwind CSS.
+                            </p>
+                        </x-slot>
+                    </x-according>
+
+                    <x-according
+                        faq_title="Can I cancel or change my order?"
+                        area_expanded="false"
+                        according_id="4"
+                        header_style="!rounded-none"
+                    >
+                        <x-slot name="faq_description">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                Flowbite is an open-source library of interactive components built on top of Tailwind
+                                CSS
+                                including buttons, dropdowns, modals, navbars, and more.
+                            </p>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Check out this guide to learn how to
+                                <a href="/docs/getting-started/introduction/"
+                                   class="text-blue-600 dark:text-blue-500 hover:underline">get started</a>
+                                and start developing websites even faster with components on top of Tailwind CSS.
+                            </p>
+                        </x-slot>
+                    </x-according>
+
+                    <x-according
+                        faq_title="How can I pay for my purchases?"
+                        according_id="5"
+                        header_style="!rounded-none !border-b border-b-gray-200"
+                        body_style="border-b border-b-gray-200"
+                    >
+                        <x-slot name="faq_description">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">
+                                Flowbite is an open-source library of interactive components built on top of Tailwind
+                                CSS
+                                including buttons, dropdowns, modals, navbars, and more.
+                            </p>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Check out this guide to learn how to
+                                <a href="/docs/getting-started/introduction/"
+                                   class="text-blue-600 dark:text-blue-500 hover:underline">get started</a>
+                                and start developing websites even faster with components on top of Tailwind CSS.
+                            </p>
+                        </x-slot>
+                    </x-according>
                 </div>
             </div>
         </div>
