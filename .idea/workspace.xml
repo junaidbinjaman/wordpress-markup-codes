@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fee1c30f-022b-495c-bb90-0c4b474d47c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/components/featured-blog-box-lg.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/featured-post-box-sm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/blogs.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/alpine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/example.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/brand-logo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/brand-logo.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/post-box.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/post-box.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/heroArea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/heroArea.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +28,7 @@
       <list>
         <option value="TypeScript JSX File" />
         <option value="PHP File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -174,7 +171,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.tailwindcss&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Applications/PhpStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -239,7 +236,11 @@
       <workItem from="1754435147214" duration="6326000" />
       <workItem from="1754500522060" duration="28000" />
       <workItem from="1755058040985" duration="5681000" />
-      <workItem from="1755251376459" duration="9448000" />
+      <workItem from="1755251376459" duration="11590000" />
+      <workItem from="1755395595542" duration="3904000" />
+      <workItem from="1755421675104" duration="1463000" />
+      <workItem from="1755446279361" duration="3025000" />
+      <workItem from="1755484310912" duration="14650000" />
     </task>
     <servers />
   </component>

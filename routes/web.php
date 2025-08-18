@@ -21,3 +21,7 @@ Route::get('/services', function() {
 Route::get('/contact', function (){
     return view('pages.contact');
 })->name('contact');
+
+Route::get('/example', function () {
+    return view('pages.example');
+});

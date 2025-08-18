@@ -1,9 +1,14 @@
 import $ from 'jquery';
 import './bootstrap';
 import Toggle from "./components/Toggle.js";
+import {Alpine} from "alpinejs";
+import './alpine.js';
 
 window.$ = $;
 window.jQuery = $;
+
+window.Alpine = Alpine;
+Alpine.start();
 
 (function ($) {
     $(document).ready(function () {
