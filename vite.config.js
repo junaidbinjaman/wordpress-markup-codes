@@ -5,14 +5,9 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
+            input: ['resources/css/app.css', 'resources/js/app.js', 'resources/js/alpine.js'],
             refresh: true,
         }),
         tailwindcss(),
-    ],
-    resolve: name => {
-        const pages = import.meta.glob('./Pages/**/*.tsx', { eager: true })
-        return pages[`./Pages/${name}.tsx`]
-    },
-
+    ]
 });

@@ -18,7 +18,7 @@
                         <span
                             class="block text-inherit w-full h-full rounded-[50px] text-heading-6 font-bold font-chivo">Learn more</span>
                     <i>
-                        <img class="ml-[7px] w-[12px] filter-black group-hover:filter-white"
+                        <img class="ml-[7px] w-[12px] invert-0 group-hover:invert"
                              src="{{asset('/icons/icon-right.svg')}}" alt="arrow right icon">
                     </i>
                 </a>

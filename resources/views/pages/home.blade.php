@@ -349,20 +349,20 @@
             </div>
         </div>
 
-        <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[139px]">
+        <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[139px]" x-data="pricing">
             <div class="text-center">
                 <h2 class="font-bold mx-auto text-[35px] leading-[44px] md:text-[46px] md:leading-[52px] lg:text-[70px] lg:leading-[82px] text-gray-900 mb-5 md:mb-[30px] max-w-[725px]">
                     Choose The Best Plan That’s For You</h2>
                 <p class="text-quote md:text-lead-lg text-gray-600 mx-auto max-w-[976px]">
                 </p>
             </div>
-            <div class="flex items-center justify-center gap-[10px] mb-[54px] text-gray-900 text-gray-900">
+            <div class="flex items-center justify-center gap-[10px] mb-[54px] text-gray-900">
                 <p class="text-text">Bill Monthly
                 </p>
                 <div class="flex items-center justify-center">
                     <label class="flex items-center cursor-pointer" for="billSwitch">
                         <div class="relative">
-                            <input class="sr-only peer" id="billSwitch" type="checkbox" name="">
+                            <input class="sr-only peer" id="billSwitch" type="checkbox" name="" @click="toggleBillingPeriod()">
                             <div
                                 class="block rounded-full w-[65px] h-[30px] bg-gray-900 peer-checked:bg-green-900"></div>
                             <div id="foobar"
@@ -374,367 +374,78 @@
                 </p>
             </div>
             <div class="package">
-                <div class="grid package-list gap-[30px] md:grid-cols-2 xl:grid-cols-4">
-                    <div
-                        class="rounded-2xl p-[30px] md:py-[53px] md:px-[48px] bg-white flex flex-col justify-between transition-all duration-300 package-card p-[35px] border border-gray-900 bill-monthly">
-                        <div>
-                            <div class="mb-[21px]">
-                                <span class="text-heading-3 font-bold font-chivo">$35</span>
-                                <span class="text-sm font-bold text-gray-400 ml-[2px]">/month</span>
-                            </div>
-                            <h5 class="text-heading-5 font-chivo font-bold mb-[9px]">Standard</h5>
-                            <p class="text-sm font-bold text-gray-400 mb-[43px]">All the basics for businesses that are
-                                just getting started.</p>
-                            <div class="w-full bg-gray-300 h-[1px] mb-[21px]"></div>
-                            <ul class="mb-[76px]">
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Unlimited updates</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom permissions</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img src="/icons/icon-close.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom designs & features</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="button">
-                            <a class="flex items-center inline-block z-10 relative transition-all duration-200 group py-[11px] px-[22px] rounded-md bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] border-[2px] border-[#171B24]"
-                               href="#"><span
-                                    class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Get Started</span>
-                                <i>
-                                    <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black"
-                                         src="/icons/icon-right.svg" alt="arrow right icon">
-                                </i>
-                            </a>
-                        </button>
-                    </div>
-                    <div
-                        class="rounded-2xl p-[30px] md:py-[53px] md:px-[48px] bg-white flex flex-col justify-between transition-all duration-300 package-card p-[35px] active border border-gray-900 bill-monthly">
-                        <div>
-                            <div class="mb-[21px]"><span class="text-heading-3 font-bold font-chivo">$89</span><span
-                                    class="text-sm font-bold text-gray-400 ml-[2px]">/month</span></div>
-                            <h5 class="text-heading-5 font-chivo font-bold mb-[9px]">Standard</h5>
-                            <p class="text-sm font-bold text-gray-400 mb-[43px]">All the basics for businesses that are
-                                just getting started.</p>
-                            <div class="w-full bg-gray-300 h-[1px] mb-[21px]"></div>
-                            <ul class="mb-[76px]">
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Unlimited updates</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom permissions</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img src="/icons/icon-close.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom designs & features</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="button">
-                            <a class="flex items-center inline-block z-10 relative transition-all duration-200 group py-[11px] px-[22px] rounded-md bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] border-[2px] border-[#171B24]"
-                               href="#">
-                                <span
-                                    class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Get Started</span>
-                                <i>
-                                    <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black"
-                                         src="/icons/icon-right.svg" alt="arrow right icon">
-                                </i>
-                            </a>
-                        </button>
-                    </div>
-                    <div
-                        class="rounded-2xl p-[30px] md:py-[53px] md:px-[48px] bg-white flex flex-col justify-between transition-all duration-300 package-card p-[35px] border border-gray-900 bill-monthly">
-                        <div>
-                            <div class="mb-[21px]">
-                                <span class="text-heading-3 font-bold font-chivo">$125</span>
-                                <span class="text-sm font-bold text-gray-400 ml-[2px]">/month</span>
-                            </div>
-                            <h5 class="text-heading-5 font-chivo font-bold mb-[9px]">Standard</h5>
-                            <p class="text-sm font-bold text-gray-400 mb-[43px]">All the basics for businesses that are
-                                just getting started.</p>
-                            <div class="w-full bg-gray-300 h-[1px] mb-[21px]"></div>
-                            <ul class="mb-[76px]">
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Unlimited updates</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom permissions</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img src="/icons/icon-close.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom designs & features</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="button">
-                            <a class="flex items-center inline-block z-10 relative transition-all duration-200 group py-[11px] px-[22px] rounded-md bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] border-[2px] border-[#171B24]"
-                               href="#">
-                                <span
-                                    class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Get Started</span>
-                                <i>
-                                    <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black"
-                                         src="/icons/icon-right.svg" alt="arrow right icon">
-                                </i>
-                            </a>
-                        </button>
-                    </div>
-                    <div
-                        class="rounded-2xl p-[30px] md:py-[53px] md:px-[48px] bg-white flex flex-col justify-between transition-all duration-300 package-card p-[35px] border border-gray-900 bill-monthly">
-                        <div>
-                            <div class="mb-[21px]"><span class="text-heading-3 font-bold font-chivo">$199</span><span
-                                    class="text-sm font-bold text-gray-400 ml-[2px]">/month</span></div>
-                            <h5 class="text-heading-5 font-chivo font-bold mb-[9px]">Standard</h5>
-                            <p class="text-sm font-bold text-gray-400 mb-[43px]">All the basics for businesses that are
-                                just getting started.</p>
-                            <div class="w-full bg-gray-300 h-[1px] mb-[21px]"></div>
-                            <ul class="mb-[76px]">
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Unlimited updates</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom permissions</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img src="/icons/icon-close.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom designs & features</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="button">
-                            <a class="flex items-center inline-block z-10 relative transition-all duration-200 group py-[11px] px-[22px] rounded-md bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] border-[2px] border-[#171B24]"
-                               href="#">
-                                <span
-                                    class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Get Started</span>
-                                <i>
-                                    <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black"
-                                         src="/icons/icon-right.svg" alt="arrow right icon">
-                                </i>
-                            </a>
-                        </button>
-                    </div>
-                    <div
-                        class="rounded-2xl p-[30px] md:py-[53px] md:px-[48px] bg-white flex flex-col justify-between transition-all duration-300 package-card p-[35px] border border-gray-900 bill-annually">
-                        <div>
-                            <div class="mb-[21px]">
-                                <span class="text-heading-3 font-bold font-chivo">$420</span>
-                                <span class="text-sm font-bold text-gray-400 ml-[2px]">/year</span>
-                            </div>
-                            <h5 class="text-heading-5 font-chivo font-bold mb-[9px]">Standard</h5>
-                            <p class="text-sm font-bold text-gray-400 mb-[43px]">All the basics for businesses that are
-                                just getting started.</p>
-                            <div class="w-full bg-gray-300 h-[1px] mb-[21px]"></div>
-                            <ul class="mb-[76px]">
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Unlimited updates</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom permissions</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img src="/icons/icon-close.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom designs & features</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="button">
-                            <a class="flex items-center inline-block z-10 relative transition-all duration-200 group py-[11px] px-[22px] rounded-md bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] border-[2px] border-[#171B24]"
-                               href="#">
-                                <span
-                                    class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Get Started</span>
-                                <i>
-                                    <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black"
-                                         src="/icons/icon-right.svg" alt="arrow right icon">
-                                </i>
-                            </a>
-                        </button>
-                    </div>
-                    <div
-                        class="rounded-2xl p-[30px] md:py-[53px] md:px-[48px] bg-white flex flex-col justify-between transition-all duration-300 package-card p-[35px] active border border-gray-900 bill-annually">
-                        <div>
-                            <div class="mb-[21px]">
-                                <span class="text-heading-3 font-bold font-chivo">$1068</span>
-                                <span class="text-sm font-bold text-gray-400 ml-[2px]">/year</span>
-                            </div>
-                            <h5 class="text-heading-5 font-chivo font-bold mb-[9px]">Standard</h5>
-                            <p class="text-sm font-bold text-gray-400 mb-[43px]">All the basics for businesses that are
-                                just getting started.</p>
-                            <div class="w-full bg-gray-300 h-[1px] mb-[21px]"></div>
-                            <ul class="mb-[76px]">
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Unlimited updates</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom permissions</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img src="/icons/icon-close.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom designs & features</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="button">
-                            <a
-                                class="flex items-center inline-block z-10 relative transition-all duration-200 group py-[11px] px-[22px] rounded-md bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] border-[2px] border-[#171B24]"
-                                href="#">
-                                <span
-                                    class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Get Started</span>
-                                <i>
-                                    <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black"
-                                         src="/icons/icon-right.svg" alt="arrow right icon">
-                                </i>
-                            </a>
-                        </button>
-                    </div>
-                    <div
-                        class="rounded-2xl p-[30px] md:py-[53px] md:px-[48px] bg-white flex flex-col justify-between transition-all duration-300 package-card p-[35px] border border-gray-900 bill-annually">
-                        <div>
-                            <div class="mb-[21px]">
-                                <span class="text-heading-3 font-bold font-chivo">$1500</span>
-                                <span
-                                    class="text-sm font-bold text-gray-400 ml-[2px]">/year</span>
-                            </div>
-                            <h5 class="text-heading-5 font-chivo font-bold mb-[9px]">Standard</h5>
-                            <p class="text-sm font-bold text-gray-400 mb-[43px]">All the basics for businesses that are
-                                just getting started.</p>
-                            <div class="w-full bg-gray-300 h-[1px] mb-[21px]"></div>
-                            <ul class="mb-[76px]">
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img
-                                        class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg"
-                                        alt="icon">
-                                    <span class="text-md text-gray-500">Unlimited updates</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img
-                                        class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg"
-                                        alt="icon">
-                                    <span class="text-md text-gray-500">Custom permissions</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img src="/icons/icon-close.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom designs & features</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="button">
-                            <a
-                                class="flex items-center inline-block z-10 relative transition-all duration-200 group py-[11px] px-[22px] rounded-md bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] border-[2px] border-[#171B24]"
-                                href="#">
-                                <span
-                                    class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Get Started</span>
-                                <i>
-                                    <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black"
-                                         src="/icons/icon-right.svg" alt="arrow right icon">
-                                </i>
-                            </a>
-                        </button>
-                    </div>
-                    <div
-                        class="rounded-2xl p-[30px] md:py-[53px] md:px-[48px] bg-white flex flex-col justify-between transition-all duration-300 package-card p-[35px] border border-gray-900 bill-annually">
-                        <div>
-                            <div class="mb-[21px]">
-                                <span class="text-heading-3 font-bold font-chivo">$2388</span>
-                                <span
-                                    class="text-sm font-bold text-gray-400 ml-[2px]">/year</span>
-                            </div>
-                            <h5 class="text-heading-5 font-chivo font-bold mb-[9px]">Standard</h5>
-                            <p class="text-sm font-bold text-gray-400 mb-[43px]">All the basics for businesses that are
-                                just getting started.</p>
-                            <div class="w-full bg-gray-300 h-[1px] mb-[21px]"></div>
-                            <ul class="mb-[76px]">
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img
-                                        class="hidden tick-icon-active" src="./assets/images/icons/icon-tick-orange.svg"
-                                        alt="icon">
-                                    <span class="text-md text-gray-500">Unlimited updates</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img class="tick-icon" src="/icons/icon-tick.svg" alt="icon">
-                                    <img
-                                        class="hidden tick-icon-active" src="/icons/icon-tick-orange.svg"
-                                        alt="icon">
-                                    <span class="text-md text-gray-500">Custom permissions</span>
-                                </li>
-                                <li class="flex items-center gap-[10px] mb-[17px]">
-                                    <img
-                                        src="/icons/icon-close.svg" alt="icon">
-                                    <span class="text-md text-gray-500">Custom designs & features</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="button">
-                            <a
-                                class="flex items-center z-10 relative transition-all duration-200 group py-[11px] px-[22px] rounded-md bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] border-[2px] border-[#171B24]"
-                                href="#">
-                                <span
-                                    class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Get Started</span>
-                                <i>
-                                    <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black"
-                                         src="{{ asset('/icons/icon-right.svg') }}" alt="arrow right icon">
-                                </i>
-                            </a>
-                        </button>
-                    </div>
+                <div x-show="showMonthly" class="grid package-list gap-[30px] md:grid-cols-2 xl:grid-cols-4">
+                    <x-price-box
+                        price="$35"
+                        period="month"
+                        pack_type="Standard"
+                        short_desc="All the basics for businesses that are just getting started."
+                        :unlimited_update="true"
+                        :custom_permission="true"
+                    />
+                    <x-price-box
+                        price="$35"
+                        period="month"
+                        pack_type="Standard"
+                        short_desc="All the basics for businesses that are just getting started."
+                        :unlimited_update="true"
+                        :custom_permission="true"
+                    />
+                    <x-price-box
+                        price="$35"
+                        period="month"
+                        pack_type="Standard"
+                        short_desc="All the basics for businesses that are just getting started."
+                        :unlimited_update="true"
+                        :custom_permission="true"
+                    />
+                    <x-price-box
+                        price="$35"
+                        period="month"
+                        pack_type="Standard"
+                        short_desc="All the basics for businesses that are just getting started."
+                        :unlimited_update="true"
+                        :custom_permission="true"
+                    />
+
+                </div>
+                <div x-show="showAnnually" class="grid package-list gap-[30px] md:grid-cols-2 xl:grid-cols-4">
+                    <x-price-box
+                        price="$75"
+                        period="year"
+                        pack_type="Standard"
+                        short_desc="All the basics for businesses that are just getting started."
+                        :unlimited_update="true"
+                        :custom_permission="true"
+                    />
+                    <x-price-box
+                        price="$75"
+                        period="year"
+                        pack_type="Standard"
+                        short_desc="All the basics for businesses that are just getting started."
+                        :unlimited_update="true"
+                        :custom_permission="true"
+                    />
+                    <x-price-box
+                        price="$75"
+                        period="year"
+                        pack_type="Standard"
+                        short_desc="All the basics for businesses that are just getting started."
+                        :unlimited_update="true"
+                        :custom_permission="true"
+                    />
+                    <x-price-box
+                        price="$75"
+                        period="year"
+                        pack_type="Standard"
+                        short_desc="All the basics for businesses that are just getting started."
+                        :unlimited_update="true"
+                        :custom_permission="true"
+                    />
+
                 </div>
             </div>
         </div>
-        <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 md:mt-[150px]">
-            <div
-                class="rounded-2xl p-[30px] gap-5 mx-auto bg-purple-200 px-[15px] py-[50px] md:flex md:px-[52px] md:py-[72px] lg:gap-[40px] lg:h-[420px] xl:h-[390px] max-w-[1190px]">
-                <div class="flex-1 mb-[30px]">
-                    <p class="text-capitalized uppercase text-gray-500 tracking-[2px] mb-[13px]">newsletter</p>
-                    <h4 class="font-bold font-chivo text-[28px] leading-[32px] md:text-heading-2 mb-[20px]">Subscribe
-                        our newsletter</h4>
-                    <p class="text-text text-gray-500">By clicking the button, you are agreeing with our</p>
-                    <a class="text-green-900" href="/">Term & Conditions</a>
-                    <form class="mt-[30px]" action="/">
-                        <div class="bg-white flex items-center justify-between p-3 rounded-[55px]">
-                            <input class="ml-[25px]" type="text" placeholder="Enter your mail ...">
-                            <button class="rounded-full bg-green-900 grid place-items-center w-[56px] h-[56px]"
-                                    type="submit">
-                                <img class="!filter-white !text-white" src="{{asset('/icons/icon-right.svg')}}" alt="">
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <div class="relative flex-1">
-                    <img
-                        class="h-full w-full object-cover rounded-2xl img-shadow lg:absolute lg:max-w-[332px] lg:h-[403px] lg:right-0"
-                        src="{{asset('/images/thumbnail-2.png')}}" alt="Agon">
-                    <img
-                        class=" object-cover absolute animate-float w-[225px] h-[170px] rounded-[14px] bottom-[-20px] left-[-10px]"
-                        src="{{asset('/images/thumbnail-2.png')}}" alt="Agon">
-                </div>
-            </div>
-        </div>
+       <x-newsletter-subscription-box />
     </div>
 @endsection

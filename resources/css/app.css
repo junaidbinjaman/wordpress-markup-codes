@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import "flowbite/src/themes/default";
+
 @plugin "flowbite/plugin";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -7,6 +8,23 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 @source "../../node_modules/flowbite";
+
+/* Font */
+@font-face {
+    font-family: "Chivo";
+    src: url("../fonts/Chivo-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Chivo";
+    src: url("../fonts/Chivo-VariableFont_wght.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
     /* Color gray */
@@ -93,6 +111,8 @@
     --color-bg-8: var(--bg-8);
     --color-bg-9: var(--bg-9);
     --color-bg-10: var(--bg-10);
+
+    --font-chivo: "Chivo", sans-serif
 }
 
 @layer utilities {
@@ -195,5 +215,13 @@
     .text-tiny {
         font-size: 10px;
         line-height: 14px;
+    }
+
+    .filter-white {
+        filter: invert(100%);
+    }
+
+    .filter-black {
+        filter: invert(0%) !important;
     }
 }

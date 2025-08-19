@@ -20,7 +20,7 @@
                             <span
                                 class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Get Start</span>
                         <i>
-                            <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black"
+                            <img class="ml-[7px] w-[12px] invert group-hover:invert-0"
                                  src="/icons/icon-right.svg" alt="arrow right icon">
                         </i>
                     </a>

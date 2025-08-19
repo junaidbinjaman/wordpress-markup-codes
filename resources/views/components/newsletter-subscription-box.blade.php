@@ -9,8 +9,8 @@
             <form class="mt-[30px]" action="/">
                 <div class="bg-white flex items-center justify-between p-3 rounded-[55px]">
                     <input class="ml-[25px] outline-none border-none focus:border-none focus:outline-" type="text" placeholder="Enter your mail ...">
-                    <button class="rounded-full bg-green-900 grid place-items-center w-[56px] h-[56px]" type="submit">
-                        <img class="filter-white" src="{{asset('icons/icon-right.svg')}}" alt="">
+                    <button class="rounded-full bg-green-900 grid place-items-center w-[56px] h-[56px] transition-transform duration-300 ease-in-out cursor-pointer ease-in-out hover:transform hover:-translate-y-1" type="submit">
+                        <img class="invert" src="{{asset('icons/icon-right.svg')}}" alt="">
                     </button>
                 </div>
             </form>
