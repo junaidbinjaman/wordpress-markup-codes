@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fee1c30f-022b-495c-bb90-0c4b474d47c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/alpine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/example.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/alpine.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Toggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/example.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +34,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
-        <option value="PHP File" />
         <option value="JavaScript File" />
+        <option value="PHP File" />
       </list>
     </option>
   </component>
@@ -148,6 +155,7 @@
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/staabm/side-effects-detector" />
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/inertiajs/inertia-laravel" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -158,29 +166,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/junaidbinjaman/Herd/shayekh/public&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/PhpStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/junaidbinjaman/Herd/shayekh/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/junaidbinjaman/Herd/shayekh/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js/Pages" />
       <recent name="$PROJECT_DIR$/resources/views/pages" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -240,7 +249,10 @@
       <workItem from="1755395595542" duration="3904000" />
       <workItem from="1755421675104" duration="1463000" />
       <workItem from="1755446279361" duration="3025000" />
-      <workItem from="1755484310912" duration="14650000" />
+      <workItem from="1755484310912" duration="15289000" />
+      <workItem from="1755522139302" duration="93000" />
+      <workItem from="1755562811097" duration="345000" />
+      <workItem from="1755563179170" duration="3604000" />
     </task>
     <servers />
   </component>
